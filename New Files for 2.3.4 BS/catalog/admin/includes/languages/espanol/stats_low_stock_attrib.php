@@ -24,10 +24,9 @@
   
   
 */
-define('HEADING_TITLE', 'Stock Report');
-
-define('TABLE_HEADING_PRODUCTS', 'Products');
-define('TABLE_HEADING_MODEL', 'Model');
-define('TABLE_HEADING_QUANTITY', 'Quantity');
-define('TABLE_HEADING_PRICE', 'Price');
+define('HEADING_TITLE', 'Informe de Stock');
+define('TABLE_HEADING_PRODUCTS', 'Productos');
+define('TABLE_HEADING_MODEL', 'Modelo');
+define('TABLE_HEADING_QUANTITY', 'Cantidad');
+define('TABLE_HEADING_PRICE', 'Precio');
 ?>
