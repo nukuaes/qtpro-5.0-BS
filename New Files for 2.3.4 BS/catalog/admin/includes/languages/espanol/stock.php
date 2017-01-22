@@ -41,23 +41,23 @@ define('BUTTON_ADD','Añadir');
 define('BUTTON_UPDATE','Actualizar');
 
 // detailed product inverstigation used in qtpro_doctor_formulate_product_investigation function
-define('TEXT_DETAILED_STOCK_MATCH_TRUE','<span style="color:green; font-weight: bold; font-size:1.2em;">The stock quantity summary is ok</span><br>
-				This means that the current summary of this products quantity, which is in the database, is the value we get if we calculates it from scratch right now.<br>
-				<b>The Summary stock is: %s </b><br><br>');
-define('TEXT_DETAILED_STOCK_MATCH_FALSE','<span style="color:red; font-weight: bold; font-size:1.2em;">The stock quantity summary is NOT ok</span><br>
-				This means that the current summary of this products quantity, which is in the database, isn\'t the value we get if we calculates it from scratch right now.<br>
-				<b>The current summary stock is: %s </b><br>
-				<b>If we calculates it we get: %s </b><br><br>');
-define('TEXT_DETAILED_STOCK_ENTRIES_HEALTHY','<span style="color:green; font-weight: bold; font-size:1.2em;">The options stock is ok</span><br>
-				This means that the database entries for this product looks the way they should. No options are missing in any row. No option exist in any row where it should not.<br>
-				<b>Total number of stock entries this product has: %s </b><br>
-				<b>Number of messy entries: %s </b><br>');
-define('TEXT_DETAILED_STOCK_ENTRIES_NOT_HEALTHY','<span style="color:red; font-weight: bold; font-size:1.2em;">The options stock is NOT ok</span><br>
-				This means that at least one of the database entries for this product is messed up. Either options are missing in rows or options exist in rows they should not.<br>
-				<b>Total number of stock entries this product has: &s </b><br>
-				<b>Number of messy entries: %s</b><br><br>');
-define('TEXT_DETAILED_STOCK_SOLUTIONS_STOP_TRACKING','<span style="color:blue; font-weight: bold;">Possible solutions: </span>Delete the corresponding row(s) from the database or stop tracking the stock for that option.<br><br>');
-define('TEXT_DETAILED_STOCK_OPTIONS_SHOULD_NOT_EXIST','<br><b>These options exists in row(s) although they should not:</b><br>');
-define('TEXT_DETAILED_STOCK_SOLUTIONS_START_TRACKING','<span style="color:blue; font-weight: bold;">Possible solutions: </span>Delete the corresponding row(s) from the database or start tracking the stock for that option.<br><br>');
-define('TEXT_DETAILED_STOCK_LINK_AMPUTATION','Amputation (Deletes all messy rows)');
-define('TEXT_DETAILED_STOCK_LINK_SET_SUMMARY','Set the summary stock to: %s');
+define('TEXT_DETAILED_STOCK_MATCH_TRUE','<span style="color:green; font-weight: bold; font-size:1.2em;">El resumen de cantidad de existencias está bien</span><br>
+				Esto significa que el resumen actual de esta cantidad de productos, que se encuentra en la base de datos, es el valor que obtenemos si lo calculamos desde cero en este momento.<br>
+				<b>El resumen de stock es %s </b><br><br>');
+define('TEXT_DETAILED_STOCK_MATCH_FALSE','<span style="color:red; font-weight: bold; font-size:1.2em;">El resumen de cantidad de existencias no está bien</span><br>
+				Esto significa que el resumen actual de esta cantidad de productos, que está en la base de datos, no es el valor que obtendremos si lo calculamos desde cero ahora mismo.<br>
+				<b>El resumen de stock es: %s </b><br>
+				<b>Si lo calculamos obtenemos: %s </b><br><br>');
+define('TEXT_DETAILED_STOCK_ENTRIES_HEALTHY','<span style="color:green; font-weight: bold; font-size:1.2em;">El stock de opciones está bien</span><br>
+				Esto significa que las entradas de la base de datos para este producto están como deberían. No hay opciones faltantes en ninguna fila. No existe ninguna opción en ninguna fila donde no debería.<br>
+				<b>El número total de entradas de stock de este producto es: %s </b><br>
+				<b>Número de entradas desordenadas: %s </b><br>');
+define('TEXT_DETAILED_STOCK_ENTRIES_NOT_HEALTHY','<span style="color:red; font-weight: bold; font-size:1.2em;">El stock de opciones NO está bien</span><br>
+				Esto significa que al menos una de las entradas de la base de datos de este producto está desordenada. Faltan opciones en las filas o hay opciones en filas que no deberían.<br>
+				<b>Número total de entradas de stock de este producto: &s </b><br>
+				<b>Número de entradas desordenadas: %s</b><br><br>');
+define('TEXT_DETAILED_STOCK_SOLUTIONS_STOP_TRACKING','<span style="color:blue; font-weight: bold;">Posible solución: </span>Elimine la/s fila/s correspondiente/s de la base de datos o deje de rastrear el stock para esa opción.<br><br>');
+define('TEXT_DETAILED_STOCK_OPTIONS_SHOULD_NOT_EXIST','<br><b>Estas opciones existen en fila/s aunque no deberían:</b><br>');
+define('TEXT_DETAILED_STOCK_SOLUTIONS_START_TRACKING','<span style="color:blue; font-weight: bold;">Posible solución: </span>Elimine la/s fila/s correspondiente/s de la base de datos o comience a rastrear el stock para esa opción.<br><br>');
+define('TEXT_DETAILED_STOCK_LINK_AMPUTATION','Amputación (Elimina todas las filas desordenadas)');
+define('TEXT_DETAILED_STOCK_LINK_SET_SUMMARY','Establecer el stock de resumen a: %s');
