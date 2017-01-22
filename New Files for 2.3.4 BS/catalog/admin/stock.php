@@ -55,7 +55,7 @@
   } else {
     $VARS = $_POST;
   }
-  if ( isset($VARS['action']) && $VARS['action'] == 'Add' ) {
+  if ( isset($VARS['action']) && $VARS['action'] == 'Añadir' ) {
     $inputok = true;
     if (!(is_numeric($VARS['product_id']) and ($VARS['product_id']==(int)$VARS['product_id']))) $inputok = false;
     while(list($v1,$v2) = each($VARS)) {
@@ -90,13 +90,13 @@
       }
     }
   }
-  if ( isset($VARS['action']) && $VARS['action'] == 'Update' ) {
+  if ( isset($VARS['action']) && $VARS['action'] == 'Actualizar' ) {
     tep_db_query("update products set products_quantity=" . (int)$VARS['quantity'] . " where products_id=" . (int)$VARS['product_id']);
     if (($VARS['quantity']<1) && (STOCK_ALLOW_CHECKOUT == 'false')) {
       tep_db_query("update products set products_status='0' where products_id=" . (int)$VARS['product_id']);
     }
   }
-  if ( isset($VARS['action']) && $VARS['action'] == 'Apply to all') {
+  if ( isset($VARS['action']) && $VARS['action'] == 'Aplicar') {
 
   }
   $flag = null;
